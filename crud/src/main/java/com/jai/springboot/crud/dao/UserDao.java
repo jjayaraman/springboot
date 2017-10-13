@@ -46,4 +46,22 @@ public class UserDao {
 		return users.get(id);
 	}
 
+	/**
+	 * Removes a record
+	 * 
+	 * @param id
+	 */
+	public void delete(int id) {
+		users.remove(id);
+	}
+
+	/**
+	 * Adds a record
+	 * 
+	 * @param id
+	 */
+	public void add(User user) {
+		users.put(users.size(), user);
+	}
+
 }
