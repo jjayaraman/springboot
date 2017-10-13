@@ -39,4 +39,21 @@ public class UserService {
 		return userDao.getUser(id);
 	}
 
+	/**
+	 * Removes a record
+	 * 
+	 * @param id
+	 */
+	public void delete(int id) {
+		userDao.delete(id);
+	}
+
+	/**
+	 * Adds a record
+	 * 
+	 * @param id
+	 */
+	public void add(User user) {
+		userDao.add(user);
+	}
 }
