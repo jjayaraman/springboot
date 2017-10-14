@@ -56,4 +56,13 @@ public class UserService {
 	public void add(User user) {
 		userDao.add(user);
 	}
+
+	/**
+	 * Updates
+	 * 
+	 * @param user
+	 */
+	public void update(User user) {
+		userDao.update(user);
+	}
 }

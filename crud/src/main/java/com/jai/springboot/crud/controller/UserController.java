@@ -45,4 +45,9 @@ public class UserController {
 	public void add(@RequestBody User user) {
 		userService.add(user);
 	}
+
+	@RequestMapping(method = RequestMethod.PUT, consumes = { MediaType.APPLICATION_JSON_VALUE })
+	public void updateUser(@RequestBody User user) {
+		userService.update(user);
+	}
 }
