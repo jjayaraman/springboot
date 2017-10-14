@@ -25,12 +25,6 @@ public class UserController {
 		return userService.getUsers();
 	}
 
-	/**
-	 * Get a user by id
-	 * 
-	 * @param id
-	 * @return
-	 */
 	@RequestMapping(path = "/{id}", method = RequestMethod.GET)
 	public User getUser(@PathVariable(name = "id") int id) {
 		return userService.getUser(id);
