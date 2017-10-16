@@ -1,4 +1,4 @@
-package com.jai.springboot.mongo;
+package com.jai.springboot.mongo.controller;
 
 import java.util.List;
 
@@ -11,9 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jai.springboot.mongo.data.UserRepository;
+import com.jai.springboot.mongo.entity.User;
+
 @RestController
 @RequestMapping(value = "/users")
-public class UserControler {
+public class UserController {
 
 	@Autowired
 	UserRepository userRepository;

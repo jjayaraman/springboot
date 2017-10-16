@@ -1,4 +1,4 @@
-package com.jai.springboot.mongo;
+package com.jai.springboot.mongo.entity;
 
 import java.io.Serializable;
 
