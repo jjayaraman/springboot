@@ -12,7 +12,7 @@ public class User implements Serializable {
 	private static final long serialVersionUID = -8180317347147509716L;
 
 	@Id
-	private int id;
+	private String id;
 
 	private String firstName;
 
@@ -22,11 +22,11 @@ public class User implements Serializable {
 
 	private String email;
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
