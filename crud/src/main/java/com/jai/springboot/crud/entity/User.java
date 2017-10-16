@@ -25,6 +25,10 @@ public class User implements Serializable {
 
 	private String email;
 
+	public User() {
+		super();
+	}
+
 	public User(int id, String firstName, String lastName, String userName, String email) {
 		super();
 		this.id = id;

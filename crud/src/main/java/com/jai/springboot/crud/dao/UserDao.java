@@ -61,7 +61,15 @@ public class UserDao {
 	 * @param id
 	 */
 	public void add(User user) {
-		users.put(users.size(), user);
+		users.put(users.size() + 1, user);
 	}
 
+	/**
+	 * Updates
+	 * 
+	 * @param user
+	 */
+	public void update(User user) {
+		users.put(user.getId(), user);
+	}
 }
