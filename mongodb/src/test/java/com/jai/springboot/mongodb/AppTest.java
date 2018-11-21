@@ -1,4 +1,4 @@
-package com.jai.springboot.hello;
+package com.jai.springboot.mongodb;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
