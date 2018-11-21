@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7ef6635-42aa-4211-872b-d1af20ce7420" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config-client/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/src/main/java/com/jai/springboot/configclient/ConfigClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/src/test/java/com/jai/springboot/configclient/ConfigClientApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/jai/springboot/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/com/jai/springboot/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ldap/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ldap/src/main/java/com/jai/springboot/ldap/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ldap/src/main/java/com/jai/springboot/ldap/LdapService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ldap/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ldap/src/test/java/com/jai/springboot/ldap/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpamysql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jpamysql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpamysql/src/main/java/com/jai/springboot/jpamysql/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpamysql/src/main/java/com/jai/springboot/jpamysql/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpamysql/src/main/java/com/jai/springboot/jpamysql/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpamysql/src/main/java/com/jai/springboot/jpamysql/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpamysql/src/main/java/com/jai/springboot/jpamysql/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpamysql/src/main/java/com/jai/springboot/jpamysql/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpamysql/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jpamysql/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +39,7 @@
     <session id="1171165124">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -60,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crud/src/main/java/com/jai/springboot/crud/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+            <state relative-caret-position="210">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -70,6 +93,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -123,12 +152,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -144,7 +175,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="5" visible="true" weight="0.32956383" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -170,8 +201,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crud/src/main/java/com/jai/springboot/crud/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
