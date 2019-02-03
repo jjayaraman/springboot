@@ -28,11 +28,6 @@ public class UserControllerTest {
 	// Get all records. 200 statusCode
 	@Test
 	public void testGetAllUsers() {
-		Response res = get("/users");
-
-		Assert.assertEquals(res.getStatusCode(), 200);
-		Assert.assertEquals(res.getContentType(), "application/json;charset=UTF-8");
-		
 		given()
 		.when()
 			.get("/users")

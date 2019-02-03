@@ -26,17 +26,20 @@ public class UserController {
 	UserService userService;
 
 	@GetMapping(path = "/users")
-	public Map<Integer, User> getUsers() {
-		return userService.getUsers();
+	public ResponseEntity<Map<Integer, User>> getUsers() {
+		if(userService.getUsers().size() == 0) {
+			return ResponseEntity.notFound().build();
+		}
+		return new ResponseEntity<Map<Integer, User>>(userService.getUsers(), HttpStatus.OK);
 	}
 
 	@GetMapping(path = "/user/{id}")
 	public ResponseEntity<User> getUser(@PathVariable(name = "id") int id) {
 		User user = userService.getUser(id);
 		if (user != null) {
-			return new ResponseEntity<User>(user, HttpStatus.OK);
+			return new ResponseEntity<User>(user, HttpStatus.OK);  //200
 		} else {
-			return ResponseEntity.notFound().build();
+			return ResponseEntity.notFound().build(); // 404
 		}
 	}
 
@@ -46,7 +49,7 @@ public class UserController {
 
 		// New user URI
 		URI location = UriComponentsBuilder.fromPath("/user/{id}").buildAndExpand(id).toUri();
-		return ResponseEntity.created(location).build();
+		return ResponseEntity.created(location).build(); // 201
 	}
 
 	@PutMapping(path = "/user", consumes = { MediaType.APPLICATION_JSON_VALUE })
@@ -55,9 +58,9 @@ public class UserController {
 		User existingUser = userService.getUser(user.getId());
 		if (existingUser != null) {
 			userService.update(user);
-			return ResponseEntity.ok().build();
+			return ResponseEntity.ok().build(); // 200
 		} else {
-			return ResponseEntity.notFound().build();
+			return ResponseEntity.notFound().build();  // 404
 		}
 		
 	}
@@ -67,7 +70,7 @@ public class UserController {
 		User user = userService.getUser(id);
 		if (user != null) {
 			userService.delete(id);
-			return ResponseEntity.ok().build();
+			return ResponseEntity.ok().build();  //200
 		} else {
 			return ResponseEntity.notFound().build(); // 404
 		}
