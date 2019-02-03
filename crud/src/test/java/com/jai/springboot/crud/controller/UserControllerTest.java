@@ -1,9 +1,14 @@
 package com.jai.springboot.crud.controller;
 
 import org.junit.Assert;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.jai.springboot.crud.entity.User;
+
+import io.restassured.RestAssured;
+import io.restassured.config.RestAssuredConfig;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -14,20 +19,25 @@ import static org.hamcrest.Matchers.*;
 //@formatter:off
 public class UserControllerTest {
 
-	private final String API_BASE = "http://localhost:8080";
-
+	@Before
+	public void before() {
+		RestAssured.baseURI = "http://localhost";
+		RestAssured.port = 8080;
+	}
+	
 	@Test
 	public void testGetAllUsers() {
-		Response res = get(API_BASE + "/users");
+		Response res = get("/users");
 
 		Assert.assertEquals(res.getStatusCode(), 200);
 		Assert.assertEquals(res.getContentType(), "application/json;charset=UTF-8");
-
-		when().get(API_BASE + "/users").then().statusCode(200).contentType(ContentType.JSON);
-
-//		List<User> user = res.getBody().jsonPath().getList("");
-//		System.out.println("xxx ::  " + user);
-
+		
+		given()
+		.when()
+			.get("/users")
+		.then()
+			.statusCode(200)
+			.contentType(ContentType.JSON);
 	}
 
 	@Test
@@ -35,12 +45,23 @@ public class UserControllerTest {
 		given()
 			.pathParam("id", 1)
 		.when()
-			.get(API_BASE + "/users/{id}")
+			.get("/user/{id}")
 		.then()
 			.statusCode(200)
 			.contentType(ContentType.JSON)
 			.body("id", equalTo(1))
 			.body("firstName", equalTo("Jay1"));
+	}
+	
+	@Test
+	public void testGetNonExistingUserById() {
+		
+		given()
+			.pathParam("id", 100)
+		.when()
+			.get("/user/{id}")
+		.then()	
+			.statusCode(204);
 	}
 	
 	@Test
@@ -51,7 +72,24 @@ public class UserControllerTest {
 
 	@Test
 	public void testDeleteUserById() {
-		// fail("Not yet implemented");
+	
+		given()
+			.pathParam("id", 5)
+		.when()
+			.delete("/user/{id}")
+		.then()
+			.statusCode(200);
+	}
+
+	@Test
+	public void testNonExistingUserById() {
+	
+		given()
+			.pathParam("id", 100)
+		.when()
+			.delete("/user/{id}")
+		.then()
+			.statusCode(404);
 	}
 
 }
