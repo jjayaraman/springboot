@@ -1,5 +1,6 @@
 package com.jai.springboot.crud.controller;
 
+import java.net.URI;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import com.jai.springboot.crud.entity.User;
 import com.jai.springboot.crud.service.UserService;
@@ -31,28 +33,33 @@ public class UserController {
 	@GetMapping(path = "/user/{id}")
 	public ResponseEntity<User> getUser(@PathVariable(name = "id") int id) {
 		User user = userService.getUser(id);
-		if(user != null) {
+		if (user != null) {
 			return new ResponseEntity<User>(user, HttpStatus.OK);
-		}else {
-			return ResponseEntity.noContent().build();	
+		} else {
+			return ResponseEntity.notFound().build();
 		}
 	}
 
 	@PostMapping(path = "/user", consumes = { MediaType.APPLICATION_JSON_VALUE })
-	public void add(@RequestBody User user) {
-		userService.add(user);
+	public ResponseEntity<User> add(@RequestBody User user) {
+		int id = userService.add(user);
+
+		// New user URI
+		URI location = UriComponentsBuilder.fromPath("/user/{id}").buildAndExpand(id).toUri();
+		return ResponseEntity.created(location).build();
 	}
 
 	@PutMapping(path = "/user", consumes = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<User> updateUser(@RequestBody User user) {
-		
+
 		User existingUser = userService.getUser(user.getId());
-		if(existingUser != null) {
+		if (existingUser != null) {
 			userService.update(user);
-			return ResponseEntity.noContent().build();
-		}else {
+			return ResponseEntity.ok().build();
+		} else {
 			return ResponseEntity.notFound().build();
 		}
+		
 	}
 
 	@DeleteMapping(path = "/user/{id}")
@@ -60,10 +67,9 @@ public class UserController {
 		User user = userService.getUser(id);
 		if (user != null) {
 			userService.delete(id);
-			return new ResponseEntity<>(null, HttpStatus.OK);
-		}
-		else {
-			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND); // Twitter uses 404
+			return ResponseEntity.ok().build();
+		} else {
+			return ResponseEntity.notFound().build(); // 404
 		}
 	}
 }

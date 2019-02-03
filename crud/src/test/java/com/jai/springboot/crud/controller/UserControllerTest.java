@@ -25,6 +25,7 @@ public class UserControllerTest {
 		RestAssured.port = 8080;
 	}
 	
+	// Get all records. 200 statusCode
 	@Test
 	public void testGetAllUsers() {
 		Response res = get("/users");
@@ -40,6 +41,7 @@ public class UserControllerTest {
 			.contentType(ContentType.JSON);
 	}
 
+	// Get existing user. 200 statusCode
 	@Test
 	public void testGetUserById() {
 		given()
@@ -49,10 +51,11 @@ public class UserControllerTest {
 		.then()
 			.statusCode(200)
 			.contentType(ContentType.JSON)
-			.body("id", equalTo(1))
-			.body("firstName", equalTo("Jay1"));
+			.body("id", equalTo(1));
+//			.body("firstName", equalTo("Jay1"));
 	}
 	
+	// Get non existing user. 404 statusCode
 	@Test
 	public void testGetNonExistingUserById() {
 		
@@ -61,15 +64,35 @@ public class UserControllerTest {
 		.when()
 			.get("/user/{id}")
 		.then()	
-			.statusCode(204);
+			.statusCode(404);
+	}
+	
+	
+	@Test
+	public void testCreateUser() {
+		User user = new User(6, "Ramya", "Krishnan", "rkrishnan", "rkrishnana@gmail.com");
+		
+		given()
+			.body(user).contentType(ContentType.JSON)
+		.when()
+			.post("/user")
+		.then()
+			.statusCode(201);
 	}
 	
 	@Test
-	public void testUpdateUserById() {
-		// fail("Not yet implemented");
+	public void testUpdateUser() {
+		User user = new User(1, "Ilayaraja", "Isai", "raja", "raja@gmail.com");
+		given()
+			.body(user).contentType(ContentType.JSON)
+		.when()
+			.put("/user")
+		.then()
+			.statusCode(200);
 	}
 
 
+	// Delete existing record. 200 statusCode
 	@Test
 	public void testDeleteUserById() {
 	
@@ -81,8 +104,9 @@ public class UserControllerTest {
 			.statusCode(200);
 	}
 
+	// Delete non existing record. 404 statusCode
 	@Test
-	public void testNonExistingUserById() {
+	public void testDeleteNonExistingUserById() {
 	
 		given()
 			.pathParam("id", 100)

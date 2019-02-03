@@ -53,8 +53,8 @@ public class UserService {
 	 * 
 	 * @param id
 	 */
-	public void add(User user) {
-		userDao.add(user);
+	public int add(User user) {
+		return userDao.add(user);
 	}
 
 	/**
