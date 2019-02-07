@@ -1,47 +1,78 @@
 package com.jai.springboot.crud.controller;
 
+import java.net.URI;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import com.jai.springboot.crud.entity.User;
 import com.jai.springboot.crud.service.UserService;
 
 @RestController
-@RequestMapping(path = "/users")
 public class UserController {
 
 	@Autowired
 	UserService userService;
 
-	@RequestMapping(method = RequestMethod.GET)
-	public Map<Integer, User> getUsers() {
-		return userService.getUsers();
+	@GetMapping(path = "/users")
+	public ResponseEntity<Map<Integer, User>> getUsers() {
+		if(userService.getUsers().size() == 0) {
+			return ResponseEntity.notFound().build();
+		}
+		return new ResponseEntity<Map<Integer, User>>(userService.getUsers(), HttpStatus.OK);
 	}
 
-	@RequestMapping(path = "/{id}", method = RequestMethod.GET)
-	public User getUser(@PathVariable(name = "id") int id) {
-		return userService.getUser(id);
+	@GetMapping(path = "/user/{id}")
+	public ResponseEntity<User> getUser(@PathVariable(name = "id") int id) {
+		User user = userService.getUser(id);
+		if (user != null) {
+			return new ResponseEntity<User>(user, HttpStatus.OK);  //200
+		} else {
+			return ResponseEntity.notFound().build(); // 404
+		}
 	}
 
-	@RequestMapping(path = "/{id}", method = RequestMethod.DELETE)
-	public void delete(@PathVariable(name = "id") int id) {
-		userService.delete(id);
+	@PostMapping(path = "/user", consumes = { MediaType.APPLICATION_JSON_VALUE })
+	public ResponseEntity<User> add(@RequestBody User user) {
+		int id = userService.add(user);
+
+		// New user URI
+		URI location = UriComponentsBuilder.fromPath("/user/{id}").buildAndExpand(id).toUri();
+		return ResponseEntity.created(location).build(); // 201
 	}
 
-	@RequestMapping(method = RequestMethod.POST, consumes = { MediaType.APPLICATION_JSON_VALUE })
-	public void add(@RequestBody User user) {
-		userService.add(user);
+	@PutMapping(path = "/user", consumes = { MediaType.APPLICATION_JSON_VALUE })
+	public ResponseEntity<User> updateUser(@RequestBody User user) {
+
+		User existingUser = userService.getUser(user.getId());
+		if (existingUser != null) {
+			userService.update(user);
+			return ResponseEntity.ok().build(); // 200
+		} else {
+			return ResponseEntity.notFound().build();  // 404
+		}
+		
 	}
 
-	@RequestMapping(method = RequestMethod.PUT, consumes = { MediaType.APPLICATION_JSON_VALUE })
-	public void updateUser(@RequestBody User user) {
-		userService.update(user);
+	@DeleteMapping(path = "/user/{id}")
+	public ResponseEntity<User> delete(@PathVariable(name = "id") int id) {
+		User user = userService.getUser(id);
+		if (user != null) {
+			userService.delete(id);
+			return ResponseEntity.ok().build();  //200
+		} else {
+			return ResponseEntity.notFound().build(); // 404
+		}
 	}
 }

@@ -1,3 +1,4 @@
+
 package com.jai.springboot.crud.dao;
 
 import java.util.Hashtable;
@@ -60,8 +61,10 @@ public class UserDao {
 	 * 
 	 * @param id
 	 */
-	public void add(User user) {
-		users.put(users.size() + 1, user);
+	public int add(User user) {
+		int key = users.size() + 1;
+		users.put(key, user);
+		return key;
 	}
 
 	/**
