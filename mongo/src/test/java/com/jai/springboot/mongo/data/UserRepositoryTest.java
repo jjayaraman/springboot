@@ -1,6 +1,7 @@
 package com.jai.springboot.mongo.data;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -46,16 +47,46 @@ public class UserRepositoryTest {
 	@Test
 	public void testCreate() {
 		User user = new User("3", "Jay", "Kumar", "jkumar", "jkumar@gmail.com");
-		userRepository.insert(user);
+		userRepository.save(user);
 		Assert.assertEquals(3, userRepository.count());
 	}
 
 	@Test
 	public void testFindAll() {
-		
+
 		List<User> users = userRepository.findAll();
 		users.stream().forEach(user -> System.out.println(user));
 		Assert.assertEquals(2, users.size());
+	}
+
+	@Test
+	public void testFindById() {
+
+		Optional<User> user = userRepository.findById("1");
+		Assert.assertEquals("1", user.get().getId());
+		System.out.println("user :: " + user);
+	}
+	
+	
+	@Test
+	public void testUpdate() {
+
+		Optional<User> userOptional = userRepository.findById("1");
+		User user = userOptional.get();
+		Assert.assertEquals("1", user.getId());
+		System.out.println("user :: " + user);
+		user.setFirstName("udpated");
+		userRepository.save(user);
+	}
+	
+	@Test
+	public void testDelete() {
+
+		Optional<User> userOptional = userRepository.findById("3");
+		User user = userOptional.get();
+		Assert.assertEquals("3", user.getId());
+		System.out.println("user :: " + user);
+		userRepository.delete(user);
 	}
 
 }
