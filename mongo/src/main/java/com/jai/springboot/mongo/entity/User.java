@@ -3,7 +3,9 @@ package com.jai.springboot.mongo.entity;
 import java.io.Serializable;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "users")
 public class User implements Serializable {
 
 	/**
@@ -21,6 +23,22 @@ public class User implements Serializable {
 	private String userName;
 
 	private String email;
+
+	/**
+	 * @param id
+	 * @param firstName
+	 * @param lastName
+	 * @param userName
+	 * @param email
+	 */
+	public User(String id, String firstName, String lastName, String userName, String email) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.userName = userName;
+		this.email = email;
+	}
 
 	public String getId() {
 		return id;
@@ -66,4 +84,5 @@ public class User implements Serializable {
 	public String toString() {
 		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", userName=" + userName + ", email=" + email + "]";
 	}
+
 }

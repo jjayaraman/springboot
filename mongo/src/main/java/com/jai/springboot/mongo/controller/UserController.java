@@ -1,6 +1,7 @@
 package com.jai.springboot.mongo.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -27,8 +28,8 @@ public class UserController {
 	}
 
 	@RequestMapping(method = RequestMethod.GET, path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public User getUserById(@PathVariable String id) {
-		return userRepository.findOne(id);
+	public Optional<User> getUserById(@PathVariable String id) {
+		return userRepository.findById(id);
 	}
 
 	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
@@ -43,7 +44,7 @@ public class UserController {
 
 	@RequestMapping(method = RequestMethod.DELETE, path = "/{id}")
 	public void delete(@PathVariable String id) {
-		userRepository.delete(id);
+		userRepository.deleteById(id);
 	}
 
 	@RequestMapping(method = RequestMethod.DELETE)
