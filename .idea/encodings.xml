@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/config-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/crud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crud_postgres" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpamysql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ldap" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mongo" charset="UTF-8" />

@@ -10,7 +10,7 @@
         <module name="config-client" />
         <module name="config-server" />
         <module name="crud" />
-        <module name="jpamysql" />
+        <module name="crud_postgres" />
         <module name="ldap" />
         <module name="mongo" />
         <module name="mongodb" />
@@ -24,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="basicAuth" options="-parameters" />
       <module name="crud" options="-parameters" />
+      <module name="crud_postgres" options="" />
       <module name="mongo" options="-parameters" />
       <module name="rest" options="-parameters" />
     </option>
