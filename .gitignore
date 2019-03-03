@@ -1,13 +1,8 @@
 *.classpath
 *.project
-<<<<<<< HEAD
-*.settings
-*/target
-*.class
-/target/
-=======
 *.settings
 */target
 *.class
 .mvn
->>>>>>> branch 'master' of https://github.com/jjayaraman/springboot.git
+
+/.idea/
