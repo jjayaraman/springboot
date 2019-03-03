@@ -22,6 +22,14 @@ public class UserController {
 	@Autowired
 	UserRepository userRepository;
 
+	/**
+	 * @param userRepository
+	 */
+	public UserController(UserRepository userRepository) {
+		super();
+		this.userRepository = userRepository;
+	}
+
 	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody List<User> getUsers() {
 		return userRepository.findAll();

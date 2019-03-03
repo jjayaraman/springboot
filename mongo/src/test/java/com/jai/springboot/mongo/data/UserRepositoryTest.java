@@ -1,5 +1,6 @@
 package com.jai.springboot.mongo.data;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -14,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.jai.springboot.mongo.entity.Address;
 import com.jai.springboot.mongo.entity.User;
 
 @RunWith(SpringRunner.class)
@@ -46,9 +48,9 @@ public class UserRepositoryTest {
 
 	@Test
 	public void testCreate() {
-		User user = new User("3", "Jay", "Kumar", "jkumar", "jkumar@gmail.com");
-		userRepository.save(user);
-		Assert.assertEquals(3, userRepository.count());
+		User user = new User("Jay", "Kumar", "jkumar", "jkumar@gmail.com");
+		User created = userRepository.save(user);
+		Assert.assertNotNull(created);
 	}
 
 	@Test
@@ -75,7 +77,7 @@ public class UserRepositoryTest {
 		User user = userOptional.get();
 		Assert.assertEquals("1", user.getId());
 		System.out.println("user :: " + user);
-		user.setFirstName("udpated");
+		user.setFirstName("Jay");
 		userRepository.save(user);
 	}
 	
@@ -87,6 +89,30 @@ public class UserRepositoryTest {
 		Assert.assertEquals("3", user.getId());
 		System.out.println("user :: " + user);
 		userRepository.delete(user);
+	}
+
+	
+	@Test
+	public void testFindByFirstName() {
+		System.out.println(userRepository.findByFirstName("Jay"));
+	}
+	
+	@Test
+	public void testFindByLastName() {
+		System.out.println(userRepository.findByLastName("Kumar"));
+	}
+
+
+	@Test
+	public void testCreate2() {
+		User user = new User("4", "Jay", "Kumar", "jkumar", "jkumar@gmail.com");
+		
+		List<Address> addresses = new ArrayList<Address>();
+		Address address1 = new Address("2", "1 Great street", "New Road", "AB1 2XX", "London", "UK");
+		addresses.add(address1);
+		user.setAddresses(addresses);
+		userRepository.save(user);
+		
 	}
 
 }
