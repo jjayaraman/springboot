@@ -6,19 +6,12 @@
       <list>
         <option value="$PROJECT_DIR$/crud/pom.xml" />
         <option value="$PROJECT_DIR$/ldap/pom.xml" />
-        <option value="$PROJECT_DIR$/rest/target/classes/META-INF/maven/com.jai.springboot/rest/pom.xml" />
         <option value="$PROJECT_DIR$/rest/pom.xml" />
-        <option value="$PROJECT_DIR$/hello/target/classes/META-INF/maven/com.jai.springboot/hello/pom.xml" />
         <option value="$PROJECT_DIR$/mongo/pom.xml" />
-        <option value="$PROJECT_DIR$/mongodb/bin/pom.xml" />
         <option value="$PROJECT_DIR$/mongodb/pom.xml" />
-        <option value="$PROJECT_DIR$/jpamysql/target/classes/META-INF/maven/com.jai.springboot/jpamysql/pom.xml" />
         <option value="$PROJECT_DIR$/jpamysql/pom.xml" />
-        <option value="$PROJECT_DIR$/security/target/classes/META-INF/maven/com.jai.springboot/security/pom.xml" />
         <option value="$PROJECT_DIR$/security/pom.xml" />
-        <option value="$PROJECT_DIR$/basicAuth/target/classes/META-INF/maven/con.jai.springboot.security/basicAuth/pom.xml" />
         <option value="$PROJECT_DIR$/basicAuth/pom.xml" />
-        <option value="$PROJECT_DIR$/rest-assured/target/classes/META-INF/maven/com.jai.api.testing/rest-assured/pom.xml" />
         <option value="$PROJECT_DIR$/rest-assured/pom.xml" />
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
