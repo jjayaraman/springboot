@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/rest-assured/pom.xml" />
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/crud_postgres/pom.xml" />
       </list>
     </option>
   </component>

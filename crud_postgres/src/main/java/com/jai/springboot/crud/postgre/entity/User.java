@@ -1,6 +1,7 @@
-package com.jai.springboot.crud;
+package com.jai.springboot.crud.postgre.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity(name = "users")

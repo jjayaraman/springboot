@@ -24,7 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="basicAuth" options="-parameters" />
       <module name="crud" options="-parameters" />
-      <module name="crud_postgres" options="" />
+      <module name="crud_postgres" options="-parameters" />
       <module name="mongo" options="-parameters" />
       <module name="rest" options="-parameters" />
     </option>
