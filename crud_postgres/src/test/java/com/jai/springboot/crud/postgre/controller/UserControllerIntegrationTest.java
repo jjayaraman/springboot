@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class UserControllerTest {
+public class UserControllerIntegrationTest {
 
     @Autowired
     UserController controller;
