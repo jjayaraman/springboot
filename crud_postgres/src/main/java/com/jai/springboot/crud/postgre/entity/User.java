@@ -1,7 +1,6 @@
 package com.jai.springboot.crud.postgre.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity(name = "users")
@@ -43,6 +42,15 @@ public class User {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", city='" + city + '\'' +
+                '}';
     }
 
 
