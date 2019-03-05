@@ -15,10 +15,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest
+@WebMvcTest(UserController.class)
 @EnableAutoConfiguration
 @EntityScan(basePackages = { "com.jai.springboot.crud.postgre.entity" })
 public class UserControllerMockTest {
