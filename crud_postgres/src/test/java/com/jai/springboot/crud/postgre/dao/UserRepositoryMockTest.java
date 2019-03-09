@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @TestPropertySource(locations = "classpath:application-test.properties")
-public class UserRepositoryUnitTest {
+public class UserRepositoryMockTest {
 
     @Autowired
     private TestEntityManager entityManager;
