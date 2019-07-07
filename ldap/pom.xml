@@ -4,7 +4,10 @@
 	<groupId>com.jai.springboot</groupId>
 	<artifactId>ldap</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>crud-aws-mssql</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>ldap</name>
 	<url>http://maven.apache.org</url>
