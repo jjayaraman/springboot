@@ -6,15 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rest" />
         <module name="basicAuth" />
-        <module name="config-client" />
-        <module name="config-server" />
-        <module name="crud" />
-        <module name="crud_postgres" />
         <module name="ldap" />
+        <module name="config-server" />
         <module name="mongo" />
         <module name="mongodb" />
-        <module name="rest" />
+        <module name="crud" />
+        <module name="crud_postgres" />
+        <module name="crud-aws-mssql" />
+        <module name="config-client" />
         <module name="rest-assured" />
         <module name="security" />
       </profile>
