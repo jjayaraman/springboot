@@ -19,6 +19,13 @@ public class Employee {
 
     private Date dataOfBirth;
 
+    public Employee(String firstName, String lastName, String email, Date dataOfBirth) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.dataOfBirth = dataOfBirth;
+    }
+
     public Long getId() {
         return id;
     }
