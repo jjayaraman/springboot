@@ -19,6 +19,9 @@ public class Employee {
 
     private Date dataOfBirth;
 
+    public Employee() {
+    }
+
     public Employee(String firstName, String lastName, String email, Date dataOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
