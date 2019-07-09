@@ -8,3 +8,5 @@
 
 **/.idea/workspace.xml 
 **/.idea/tasks.xml
+
+crud-aws-mssql/src/main/resources/application\.properties
