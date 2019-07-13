@@ -20,3 +20,5 @@ crud-aws-mssql/src/main/resources/application-mysql.properties
 crud-aws-mssql/src/main/resources/application-mysql.yml
 
 crud-aws-mssql/src/main/resources/application-mysql.properties
+
+crud-aws-mssql/src/main/resources/application-mssql.yml
