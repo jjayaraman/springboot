@@ -205,9 +205,6 @@
       <recent name="com.jai.springboot.crud.postgre.dao" />
       <recent name="com.jai.springboot.crud.postgre.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/crud_postgres/src/test/java" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.jai.springboot.aws" />
       <recent name="com.jai.springboot.crud.exception" />
@@ -215,11 +212,14 @@
       <recent name="com.jai.springboot.crud.entity" />
       <recent name="com.jai.springboot.crud.controller" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/crud-aws-mssql/src/main/resources" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/crud-aws-mssql/src/main/resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/crud_postgres/src/test/java" />
     </key>
   </component>
   <component name="RunDashboard">
