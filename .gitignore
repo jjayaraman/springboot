@@ -10,3 +10,7 @@
 **/.idea/tasks.xml
 
 crud-aws-mssql/src/main/resources/application\.properties
+
+crud-aws-mssql/src/main/resources/application-mssql\.properties
+
+crud-aws-mssql/src/main/resources/application-postgres.properties
