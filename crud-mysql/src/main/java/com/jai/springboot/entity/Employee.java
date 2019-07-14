@@ -1,14 +1,83 @@
 package com.jai.springboot.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 @Entity
 @Table(schema = "employees", name = "employees")
 public class Employee {
 
+    @Id
+    private Long empNo;
 
+    private String firstName;
 
+    private String lastName;
+    private Date birthDate;
+    private Date hireDate;
+    private String gender;
+
+    public Long getEmpNo() {
+        return empNo;
+    }
+
+    public void setEmpNo(Long empNo) {
+        this.empNo = empNo;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public Date getHireDate() {
+        return hireDate;
+    }
+
+    public void setHireDate(Date hireDate) {
+        this.hireDate = hireDate;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "empNo=" + empNo +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthDate=" + birthDate +
+                ", hireDate=" + hireDate +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
 }
 
 

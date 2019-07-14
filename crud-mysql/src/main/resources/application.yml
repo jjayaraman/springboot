@@ -5,7 +5,14 @@ spring:
     password: jaymysql
 
   jpa:
-    show-sql: true
+    show-sql: false
 
     hibernate:
       ddl-auto: update
+
+#  cache:
+#    type: redis
+
+#  redis:
+#    host: localhost
+#    port: 6379
