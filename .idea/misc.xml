@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/crud_postgres/pom.xml" />
         <option value="$PROJECT_DIR$/crud-aws-mssql/pom.xml" />
+        <option value="$PROJECT_DIR$/crud-mysql/pom.xml" />
       </list>
     </option>
   </component>

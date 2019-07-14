@@ -8,15 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rest" />
         <module name="basicAuth" />
+        <module name="mongodb" />
         <module name="config-server" />
         <module name="mongo" />
-        <module name="mongodb" />
+        <module name="crud-mysql" />
+        <module name="rest-assured" />
         <module name="crud" />
         <module name="crud_postgres" />
         <module name="crud-aws-mssql" />
         <module name="config-client" />
         <module name="ldap" />
-        <module name="rest-assured" />
         <module name="security" />
       </profile>
     </annotationProcessing>
