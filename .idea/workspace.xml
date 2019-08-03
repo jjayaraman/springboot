@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddcb06c9-69c0-4583-b766-5ef425e0ce23" name="Default Changelist" comment="crud aws">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/jay.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="ddcb06c9-69c0-4583-b766-5ef425e0ce23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-mysql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/crud/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +53,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -98,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Maven.crud [install]">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jai.springboot.crud.App" />
       <module name="crud" />
@@ -121,22 +116,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeRepositoryTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crud-aws-mssql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jai.springboot.aws.entity.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jai.springboot.aws.entity.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.jai.springboot.aws.entity.repository.EmployeeRepositoryTest" />
-      <option name="METHOD_NAME" value="testCreate" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,6 +152,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="crud [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/crud" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="crud_postgres [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -198,23 +203,59 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="crud/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="crud/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Application" />
       <item itemvalue="Application.App" />
-      <item itemvalue="JUnit.EmployeeRepositoryTest.testCreate" />
       <item itemvalue="JUnit.EmployeeServiceTest.getEmployees (1)" />
       <item itemvalue="JUnit.EmployeeServiceTest.getEmployees" />
       <item itemvalue="Maven.crud_postgres [spring-boot:run]" />
+      <item itemvalue="Docker.crud/Dockerfile" />
+      <item itemvalue="Maven.crud [install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.crud/Dockerfile" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.EmployeeServiceTest.getEmployees (1)" />
         <item itemvalue="JUnit.EmployeeServiceTest.getEmployees" />
-        <item itemvalue="JUnit.EmployeeRepositoryTest.testCreate" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.19438775" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4268a8" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4268a8" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@139e905f" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -318,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563033433647</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="docker enabled for crud">
+      <created>1564816407587</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1564816407587</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,7 +386,8 @@
     <MESSAGE value="crud postgre" />
     <MESSAGE value="test added" />
     <MESSAGE value="crud aws" />
-    <option name="LAST_COMMIT_MESSAGE" value="crud aws" />
+    <MESSAGE value="docker enabled for crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker enabled for crud" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
