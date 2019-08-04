@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ddcb06c9-69c0-4583-b766-5ef425e0ce23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/crud/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -220,10 +219,10 @@
     <list>
       <item itemvalue="Application.Application" />
       <item itemvalue="Application.App" />
+      <item itemvalue="Docker.crud/Dockerfile" />
       <item itemvalue="JUnit.EmployeeServiceTest.getEmployees (1)" />
       <item itemvalue="JUnit.EmployeeServiceTest.getEmployees" />
       <item itemvalue="Maven.crud_postgres [spring-boot:run]" />
-      <item itemvalue="Docker.crud/Dockerfile" />
       <item itemvalue="Maven.crud [install]" />
     </list>
     <recent_temporary>
@@ -366,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564816407587</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="docker enabled for crud">
+      <created>1564832409709</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1564832409709</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
