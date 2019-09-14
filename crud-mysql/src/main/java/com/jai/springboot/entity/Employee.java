@@ -1,5 +1,6 @@
 package com.jai.springboot.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,7 +11,8 @@ import java.util.Date;
 public class Employee {
 
     @Id
-    private Long empNo;
+    @Column(name = "empNo", nullable = false, unique = true)
+    private Long id;
 
     private String firstName;
 
@@ -19,12 +21,12 @@ public class Employee {
     private Date hireDate;
     private String gender;
 
-    public Long getEmpNo() {
-        return empNo;
+    public Long getId() {
+        return id;
     }
 
-    public void setEmpNo(Long empNo) {
-        this.empNo = empNo;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -70,7 +72,7 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "empNo=" + empNo +
+                "empNo=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", birthDate=" + birthDate +

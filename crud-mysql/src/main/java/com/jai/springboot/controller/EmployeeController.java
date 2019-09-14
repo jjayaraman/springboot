@@ -3,17 +3,17 @@ package com.jai.springboot.controller;
 import com.jai.springboot.entity.Employee;
 import com.jai.springboot.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.net.URI;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/employee")
+@RequestMapping(path = "/api/employee")
 public class EmployeeController {
 
 
@@ -43,6 +43,14 @@ public class EmployeeController {
         Instant end = Instant.now();
         System.out.println("controller /{id} took : " + Duration.between(start, end).toMillis() + " ms");
         return employee;
+    }
 
+    @PostMapping()
+    public ResponseEntity<Employee> createEmployee(@Valid @RequestBody Employee employee) {
+        Employee created = employeeService.createEmployee(employee);
+        if (created == null) {
+            return ResponseEntity.badRequest().build();
+        }
+        return ResponseEntity.created(URI.create("/api/employee" + created.getId())).body(created);
     }
 }
