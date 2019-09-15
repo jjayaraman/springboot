@@ -9,8 +9,9 @@ public interface EmployeeService {
     @Cacheable(value = "employees")
     List<Employee> getEmployees();
 
-    @Cacheable(value = "employee")
     Employee getEmployeeById(Long id);
 
     Employee createEmployee(Employee employee);
+
+    Employee updateEmployee(Employee employee);
 }

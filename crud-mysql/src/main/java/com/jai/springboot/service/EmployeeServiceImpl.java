@@ -29,7 +29,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    @Cacheable(value = "employee")
     public Employee getEmployeeById(Long id) {
         Employee employee = null;
 
@@ -47,7 +46,23 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee createEmployee(Employee employee) {
+        Long currentMaxEmpId = employeeRepository.findEmployeeIdMax();
+        employee.setId(currentMaxEmpId + 1);
         return employeeRepository.save(employee);
     }
 
+    @Override
+    public Employee updateEmployee(Employee employee) {
+
+        if (employee.getId() == null) {
+            throw new EntityNotFoundException("Entity not found.");
+        } else {
+            Optional<Employee> optionalEmployee = employeeRepository.findById(employee.getId());
+            if (!optionalEmployee.isPresent()) {
+                throw new EntityNotFoundException("Entity not found.");
+            } else {
+                return employeeRepository.save(employee);
+            }
+        }
+    }
 }

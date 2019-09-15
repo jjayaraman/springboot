@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Table(schema = "employees", name = "employees")
@@ -17,8 +17,8 @@ public class Employee {
     private String firstName;
 
     private String lastName;
-    private Date birthDate;
-    private Date hireDate;
+    private LocalDate birthDate;
+    private LocalDate hireDate;
     private String gender;
 
     public Long getId() {
@@ -45,19 +45,19 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
-    public Date getHireDate() {
+    public LocalDate getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(Date hireDate) {
+    public void setHireDate(LocalDate hireDate) {
         this.hireDate = hireDate;
     }
 
