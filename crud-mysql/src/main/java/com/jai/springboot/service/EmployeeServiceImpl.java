@@ -33,12 +33,18 @@ public class EmployeeServiceImpl implements EmployeeService {
         Employee employee = null;
 
         Instant start = Instant.now();
-        Optional<Employee> optional = employeeRepository.findById(id);
-        if (optional.isPresent()) {
-            employee = optional.get();
+
+        if (id == null) {
+            throw new EntityNotFoundException("Entity not found.");
         } else {
-            throw new EntityNotFoundException("Employee not found");
+            Optional<Employee> optional = employeeRepository.findById(id);
+            if (!optional.isPresent()) {
+                throw new EntityNotFoundException("Entity not found");
+            } else {
+                employee = optional.get();
+            }
         }
+
         Instant end = Instant.now();
         System.out.println("getEmployeeById took : " + Duration.between(start, end).toMillis() + " milliseconds.");
         return employee;
@@ -65,4 +71,15 @@ public class EmployeeServiceImpl implements EmployeeService {
             }
         }
     }
+
+
+    @Override
+    public void deleteEmployee(Long id) {
+        if (id == null || !employeeRepository.existsById(id)) {
+            throw new EntityNotFoundException("Entity not found.");
+        } else {
+            employeeRepository.deleteById(id);
+        }
+    }
+
 }
