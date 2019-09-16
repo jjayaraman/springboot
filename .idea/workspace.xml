@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ddcb06c9-69c0-4583-b766-5ef425e0ce23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/controller/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-mysql/src/test/java/com/jai/springboot/service/EmployeeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/test/java/com/jai/springboot/service/EmployeeServiceImplTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeServiceImplTest.getEmployeeByIdNull">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jai.springboot.Application" />
       <module name="crud-mysql" />
@@ -254,11 +254,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.EmployeeServiceImplTest.getEmployeeByIdNull" />
         <item itemvalue="JUnit.EmployeeServiceImplTest.getEmployeeById" />
         <item itemvalue="JUnit.EmployeeServiceImplTest" />
         <item itemvalue="JUnit.EmployeeServiceImplTest.deleteEmployee" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568582826592</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="crud-mysql test case added">
+      <created>1568609827717</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1568609827717</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +450,8 @@
     <MESSAGE value="docker enabled for crud" />
     <MESSAGE value="crud-mysql API added" />
     <MESSAGE value="crud-mysql API updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="crud-mysql API updated" />
+    <MESSAGE value="crud-mysql test case added" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud-mysql test case added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

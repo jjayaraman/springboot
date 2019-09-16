@@ -3,7 +3,6 @@ package com.jai.springboot.service;
 import com.jai.springboot.entity.Employee;
 import com.jai.springboot.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -19,7 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeRepository employeeRepository;
 
     @Override
-    @Cacheable(value = "employees")
+//    @Cacheable(value = "employees")
     public List<Employee> getEmployees() {
         Instant start = Instant.now();
         List<Employee> employees = employeeRepository.findAll();

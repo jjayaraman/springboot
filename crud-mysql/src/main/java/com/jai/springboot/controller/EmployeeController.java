@@ -94,4 +94,15 @@ public class EmployeeController {
         }
     }
 
+    @DeleteMapping(path = "/employee/{id}")
+    public ResponseEntity<Employee> deleteEmployee(@PathVariable("id") Long id) {
+        try {
+            employeeService.deleteEmployee(id);
+            return ResponseEntity.ok().build();
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        }
+
+    }
+
 }

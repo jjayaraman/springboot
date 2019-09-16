@@ -1,12 +1,11 @@
 package com.jai.springboot.service;
 
 import com.jai.springboot.entity.Employee;
-import org.springframework.cache.annotation.Cacheable;
 
 import java.util.List;
 
 public interface EmployeeService {
-    @Cacheable(value = "employees")
+    //    @Cacheable(value = "employees")
     List<Employee> getEmployees();
 
     Employee getEmployeeById(Long id);
