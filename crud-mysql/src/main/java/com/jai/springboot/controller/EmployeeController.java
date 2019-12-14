@@ -27,7 +27,7 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @Autowired
-    EmployeeRepository employeeRepository;
+    private EmployeeRepository employeeRepository;
 
     @GetMapping(path = "/test")
     public String test() {

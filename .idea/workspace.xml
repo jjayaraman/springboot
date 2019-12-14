@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddcb06c9-69c0-4583-b766-5ef425e0ce23" name="Default Changelist" comment="">
+    <list default="true" id="7f1b70a1-312f-4dcf-b9d6-d126fd9d0b81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jay.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/springboot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service/EmployeeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/test/java/com/jai/springboot/service/EmployeeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud-mysql/src/test/java/com/jai/springboot/service/EmployeeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud-mysql/src/test/java/com/jai/springboot/service/EmployeeServiceIntegrationTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,79 +26,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="springboot" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="JUnit4 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1OnPoMEBoEd3d12EDWvv2EoYn5Y" />
-  <component name="ProjectLevelVcsManager">
-    <OptionsSetting value="false" id="Update" />
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1TzKN0j0gff14HEG9nllYeN6GUi" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/crud-aws-mssql/src/main/resources/application-mysql.yml&#10;/Users/jay/git_jay/springboot/crud-aws-mssql/src/main/resources/application.properties" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563132154116" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/crud-aws-mssql/src/main/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-  </component>
-  <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="com.jai.springboot.service" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.jai.springboot.service" />
-      <recent name="com.jai.springboot.controller" />
-      <recent name="com.jai.springboot" />
-      <recent name="com.jai.springboot.aws.entity.repository" />
-      <recent name="com.jai.springboot.crud.postgre.dao" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.jai.springboot.config" />
-      <recent name="com.jai.springboot.service" />
-      <recent name="com.jai.springboot.controller" />
-      <recent name="com.jai.springboot.aws" />
-      <recent name="com.jai.springboot.crud.exception" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/crud-aws-mssql/src/main/resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/service" />
-      <recent name="$PROJECT_DIR$/crud-mysql/src/test/java" />
-      <recent name="$PROJECT_DIR$/crud_postgres/src/test/java" />
-    </key>
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -99,448 +46,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jai.springboot.Application" />
-      <module name="crud-mysql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jai.springboot.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crud-mysql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jai.springboot.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jai.springboot.service" />
-      <option name="MAIN_CLASS_NAME" value="com.jai.springboot.service.EmployeeServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceImplTest.deleteEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crud-mysql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jai.springboot.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jai.springboot.service" />
-      <option name="MAIN_CLASS_NAME" value="com.jai.springboot.service.EmployeeServiceImplTest" />
-      <option name="METHOD_NAME" value="deleteEmployee" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceImplTest.getEmployeeById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crud-mysql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jai.springboot.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jai.springboot.service" />
-      <option name="MAIN_CLASS_NAME" value="com.jai.springboot.service.EmployeeServiceImplTest" />
-      <option name="METHOD_NAME" value="getEmployeeById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceImplTest.getEmployeeByIdNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crud-mysql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jai.springboot.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jai.springboot.service" />
-      <option name="MAIN_CLASS_NAME" value="com.jai.springboot.service.EmployeeServiceImplTest" />
-      <option name="METHOD_NAME" value="getEmployeeByIdNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest.getEmployees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crud-mysql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jai.springboot.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jai.springboot.service" />
-      <option name="MAIN_CLASS_NAME" value="com.jai.springboot.service.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="getEmployees" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="crud [install]" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="install" />
-                <option value="-DskipTests" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/crud" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="crud_postgres [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="spring-boot:run" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/crud_postgres" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.Application" />
-      <item itemvalue="Maven.crud_postgres [spring-boot:run]" />
-      <item itemvalue="Maven.crud [install]" />
-      <item itemvalue="JUnit.EmployeeServiceImplTest.deleteEmployee" />
-      <item itemvalue="JUnit.EmployeeServiceImplTest" />
-      <item itemvalue="JUnit.EmployeeServiceImplTest.getEmployeeById" />
-      <item itemvalue="JUnit.EmployeeServiceImplTest.getEmployeeByIdNull" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.EmployeeServiceImplTest.getEmployeeByIdNull" />
-        <item itemvalue="JUnit.EmployeeServiceImplTest.getEmployeeById" />
-        <item itemvalue="JUnit.EmployeeServiceImplTest" />
-        <item itemvalue="JUnit.EmployeeServiceImplTest.deleteEmployee" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <option name="contentProportion" value="0.19438775" />
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4268a8" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4268a8" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@139e905f" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ddcb06c9-69c0-4583-b766-5ef425e0ce23" name="Default Changelist" comment="" />
-      <created>1551650425369</created>
+      <changelist id="7f1b70a1-312f-4dcf-b9d6-d126fd9d0b81" name="Default Changelist" comment="" />
+      <created>1574457439246</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551650425369</updated>
+      <updated>1574457439246</updated>
+      <workItem from="1574457441444" duration="107000" />
     </task>
-    <task id="LOCAL-00001" summary="crud postgre">
-      <created>1551658458301</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1551658458301</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test added">
-      <created>1551685415907</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1551685415907</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test added">
-      <created>1551685736364</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1551685736364</updated>
-    </task>
-    <task id="LOCAL-00004" summary="test added">
-      <created>1551686777902</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1551686777902</updated>
-    </task>
-    <task id="LOCAL-00005" summary="test added">
-      <created>1551771620516</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1551771620516</updated>
-    </task>
-    <task id="LOCAL-00006" summary="test added">
-      <created>1551773133827</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1551773133827</updated>
-    </task>
-    <task id="LOCAL-00007" summary="test added">
-      <created>1552115976838</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1552115976838</updated>
-    </task>
-    <task id="LOCAL-00008" summary="crud aws">
-      <created>1562518700352</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1562518700352</updated>
-    </task>
-    <task id="LOCAL-00009" summary="crud aws">
-      <created>1562618324918</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1562618324918</updated>
-    </task>
-    <task id="LOCAL-00010" summary="crud aws">
-      <created>1562618418896</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1562618418896</updated>
-    </task>
-    <task id="LOCAL-00011" summary="crud aws">
-      <created>1562999373916</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1562999373916</updated>
-    </task>
-    <task id="LOCAL-00012" summary="crud aws">
-      <created>1563029454170</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1563029454170</updated>
-    </task>
-    <task id="LOCAL-00013" summary="crud aws">
-      <created>1563033433647</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1563033433647</updated>
-    </task>
-    <task id="LOCAL-00014" summary="docker enabled for crud">
-      <created>1564816407587</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1564816407587</updated>
-    </task>
-    <task id="LOCAL-00015" summary="docker enabled for crud">
-      <created>1564832409709</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1564832409709</updated>
-    </task>
-    <task id="LOCAL-00016" summary="docker enabled for crud">
-      <created>1564935815624</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1564935815624</updated>
-    </task>
-    <task id="LOCAL-00017" summary="crud-mysql API added">
-      <created>1568446068161</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1568446068161</updated>
-    </task>
-    <task id="LOCAL-00018" summary="crud-mysql API updated">
-      <created>1568582826592</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1568582826592</updated>
-    </task>
-    <task id="LOCAL-00019" summary="crud-mysql test case added">
-      <created>1568609827717</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1568609827717</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="crud postgre" />
-    <MESSAGE value="test added" />
-    <MESSAGE value="crud aws" />
-    <MESSAGE value="docker enabled for crud" />
-    <MESSAGE value="crud-mysql API added" />
-    <MESSAGE value="crud-mysql API updated" />
-    <MESSAGE value="crud-mysql test case added" />
-    <option name="LAST_COMMIT_MESSAGE" value="crud-mysql test case added" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/crud-mysql/src/main/java/com/jai/springboot/controller/EmployeeController.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>crud-mysql</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

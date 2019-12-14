@@ -23,7 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         Instant start = Instant.now();
         List<Employee> employees = employeeRepository.findAll();
         Instant end = Instant.now();
-        System.out.println("" + Duration.between(start, end).toMillis() + " milliseconds");
+        System.out.println("getEmployees() took : " + Duration.between(start, end).toMillis() + " milliseconds");
         return employees;
     }
 
