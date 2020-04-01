@@ -1,0 +1,17 @@
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: password
+        url: jdbc:postgresql://postgresql-dbinstance.abcd.eu-west-2.rds.amazonaws.com:5432/postgres
+        username: user
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                default_schema: myschema
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                jdbc:
+                    lob:
+                        non_contextual_creation: true
+        show-sql: true
