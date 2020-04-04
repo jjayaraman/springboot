@@ -1,13 +1,17 @@
-spring.application.name=config-client
+spring:
+  application:
+    name: config
 
 #Active Profile - will relate to development properties file in the server.
 #If this property is absent then default profile will be activated which is
 #the property file without any environment name at the end.
+  profiles:
+    active: dev
 
-spring.profiles.active=development
+  cloud:
+    config:
+      uri: http://localhost:8888
 
-# this is the default
-
-spring.cloud.config.uri=http://localhost:8888
-
-management.security.enabled=false
+management:
+  security:
+    enabled: false
