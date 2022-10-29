@@ -1,0 +1,12 @@
+#!/bin/bash
+yum update -y
+yum remove java-1.7.0-openjdk -y
+yum install java-1.8.0-openjdk -y
+
+yum -y install docker
+systemctl enable docker
+systemctl start docker
+
+docker pull jjayaraman/crud:1.0.0
+docker run -it -d -p8080:8080 jjayaraman/crud:1.0.0
+
