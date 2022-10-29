@@ -1,4 +1,4 @@
-FROM openjdk
+FROM openjdk:8-jdk-alpine
 MAINTAINER Jay Jay
 ADD "target/crud-0.0.1-SNAPSHOT.jar" "/app.jar"
 EXPOSE 8080:8080
