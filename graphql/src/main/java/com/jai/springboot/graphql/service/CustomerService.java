@@ -4,18 +4,21 @@ import com.jai.springboot.graphql.model.CreateCustomerInput;
 import com.jai.springboot.graphql.model.Customer;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class CustomerService {
 
-    List<Customer> customers = Arrays.asList(
-            new Customer(1, "Jay", 10002000),
-            new Customer(2, "Tom", 20002000),
-            new Customer(3, "Mike", 30002000)
-    );
+    private final List<Customer> customers = new ArrayList<>();
+
+    public CustomerService() {
+        // Initialize with dummy data
+        customers.add(new Customer(1, "Jay", 10002000));
+        customers.add(new Customer(2, "Tom", 20002000));
+        customers.add(new Customer(3, "Mike", 30002000));
+    }
 
     public List<Customer> getCustomers() {
         return customers;
