@@ -21,8 +21,8 @@ public class CustomerService {
         return customers;
     }
 
-    public Optional<Customer> getCustomerById(int id) {
-        return customers.stream().filter(c -> c.id() == id).findFirst();
+    public Optional<Customer> getCustomerById(Integer id) {
+        return customers.stream().filter(c -> c.id().equals(id)).findFirst();
     }
 
     public Customer create(CreateCustomerInput input) {

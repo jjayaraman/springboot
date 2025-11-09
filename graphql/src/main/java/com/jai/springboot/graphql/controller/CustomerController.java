@@ -4,6 +4,7 @@ package com.jai.springboot.graphql.controller;
 import com.jai.springboot.graphql.model.CreateCustomerInput;
 import com.jai.springboot.graphql.model.Customer;
 import com.jai.springboot.graphql.service.CustomerService;
+import graphql.GraphQLException;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
@@ -26,8 +27,8 @@ public class CustomerController {
     }
 
     @QueryMapping
-    public Customer customerById(@Argument int id) {
-        return customerService.getCustomerById(id).orElseThrow();
+    public Customer customerById(@Argument Integer id) {
+        return customerService.getCustomerById(id).orElseThrow(() -> new GraphQLException("No records found for the given id: " + id));
     }
 
 
