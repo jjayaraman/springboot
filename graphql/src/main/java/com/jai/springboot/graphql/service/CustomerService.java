@@ -1,5 +1,6 @@
 package com.jai.springboot.graphql.service;
 
+import com.jai.springboot.graphql.model.CreateCustomerInput;
 import com.jai.springboot.graphql.model.Customer;
 import org.springframework.stereotype.Service;
 
@@ -22,5 +23,11 @@ public class CustomerService {
 
     public Optional<Customer> getCustomerById(int id) {
         return customers.stream().filter(c -> c.id() == id).findFirst();
+    }
+
+    public Customer create(CreateCustomerInput input) {
+        Customer customer = new Customer(input.id(), input.name(), input.accountNumber());
+        customers.add(customer);
+        return customer;
     }
 }

@@ -3,11 +3,23 @@ type Query{
     customerById(id:ID): Customer
 }
 
+type Mutation {
+    createCustomer(input:CreateCustomerInput):Customer
+}
+
 type Customer {
     id: ID
     name: String
     accountNumber: Int
 }
+
+input CreateCustomerInput {
+    id: ID
+    name: String
+    accountNumber:Int
+}
+
+
 
 #type Name  {
 #    firstName:String
