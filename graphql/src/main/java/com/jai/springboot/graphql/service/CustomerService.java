@@ -33,4 +33,8 @@ public class CustomerService {
         customers.add(customer);
         return customer;
     }
+
+    public boolean deleteCustomer(Integer id) {
+        return customers.removeIf(c -> c.id().equals(id));
+    }
 }

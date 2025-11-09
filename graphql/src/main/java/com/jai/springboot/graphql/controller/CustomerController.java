@@ -36,4 +36,9 @@ public class CustomerController {
         return customerService.create(input);
     }
 
+    @MutationMapping
+    public Boolean deleteCustomer(@Argument Integer id) {
+        return customerService.deleteCustomer(id);
+    }
+
 }
